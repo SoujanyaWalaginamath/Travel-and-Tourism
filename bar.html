@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="bar.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0b8d3;
+  }
+  
+  #registration-form {
+    color: darkblue;
+    font-weight: bolder;
+    width: 40%;
+    margin: 40px auto;
+    padding: 60px;
+    border-radius: 20px;
+    background-color: #f6a5c0;
+    border: 1px solid #0c0d0d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid #000000;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #c22f2f;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #48edff;
+   
+  }
+  
+  .error-message {
+    color: #red;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+</style>
+<body>
+    <form id="registration-form">
+        <label for="name" style="font-size:30px; ">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email" style="font-size:25px;">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="phone" style="font-size:25px;">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      
+        <label for="travel-date" style="font-size:25px;">Travel Date:</label>
+        <input type="date" id="travel-date" name="travel-date" required>
+      
+        <label for="destination" style="font-size:25px;">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select Destination</option>
+          <option value="New York">DAL LAKE</option>
+          <option value="Los Angeles">GREAT WALL OF CHINA</option>
+          <option value="Chicago">MEENAKSHI TEMPLE</option>
+          <option value="Chicago">SYNDAY OPERA HOUSE</option>
+          <option value="Chicago">TWIN TOWER</option>
+          <option value="Chicago">MOUNT FUJI</option>
+
+        </select>
+      
+        <label for="number-of-travelers" style="font-size:25px;">Number of Travelers:</label>
+        <input type="number" id="number-of-travelers" name="number-of-travelers" required>
+      
+        <button id="submit-button" style="font-size: 30px;">Book Ticket</button>
+      </form>
+      
+      
+    <script src="bar.js"></script>
+</body>
+</html>

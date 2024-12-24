@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact Us</title>
+</head>
+<style>
+  
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.contact {
+    background-color: #a387c9;
+    padding: 2em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background-color: #574b4b;
+    color: #f1f4f6;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+</style>
+<body bgcolor="plum">
+  <main>
+    <section class="contact">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you! Whether you have a question about our packages, or just want to say hello, we're here to help.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        <input type="submit" value="Send">
+      </form>
+      <div class="contact-info" style="font-size: 30px;">
+        <h2>Our Contact Information</h2>
+        <p>Address: 123 Main St, Anytown, USA</p>
+        <p>Phone: 555-555-5555</p>
+        <p>Email: <a href="mailto:info@travelwebsite.com">info@travelwebsite.com</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
